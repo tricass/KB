@@ -1,0 +1,4 @@
+Changing vim colour schemes
+https://unix.stackexchange.com/questions/88879/better-colors-so-comments-arent-dark-blue-in-vim
+
++ To have the color scheme by default every time you open vim, add :color desert into your ~/.vimrc
