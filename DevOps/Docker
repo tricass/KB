@@ -15,7 +15,8 @@ docker run -it <image_name> <cmd_from_image>
 
   ++ Run a clean image use: "--rm"
   ++ To share a directory or volume with the container use: "-v "<host_filesystem_directory>:<maps_to_container_filesystem_diferectory>""
-     eg. "-v "$PWD:/app""
+     eg. -v "${PWD}:/app" (Windows)
+     eg. -v "$PWD:/app" (Linux/Mac)
 
 eg. docker run -it ubuntu bash (run the ubuntu image and launch the bash shell)
 
@@ -23,7 +24,7 @@ eg. docker run -it ubuntu bash (run the ubuntu image and launch the bash shell)
 Syntax:
 FROM <image>
 RUN <cmd> [&& <cmd>]
-CMD <cmd>>
+CMD <cmd>
 
 eg.
 FROM ubuntu
