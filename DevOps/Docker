@@ -8,7 +8,7 @@ docker ps
 docker images
 
 + Pull down an image
-docker pull <image_name>
+docker pull <image_name>[:<version>]
 
 + Run a container instance
 docker run -it <image_name> <cmd_from_image>
