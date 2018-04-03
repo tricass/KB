@@ -13,6 +13,10 @@ docker pull <image_name>[:<version>]
 + Run a container instance
 docker run -it <image_name> <cmd_from_image>
 
+  ++ Run a clean image use: "--rm"
+  ++ To share a directory or volume with the container use: "-v "<host_filesystem_directory>:<maps_to_container_filesystem_diferectory>""
+     eg. "-v "$PWD:/app""
+
 eg. docker run -it ubuntu bash (run the ubuntu image and launch the bash shell)
 
 + Customise an image by defining a Dockerfile (Windows) or .dockerfile (Linux/Mac)
