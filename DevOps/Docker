@@ -20,6 +20,12 @@ docker run -it <image_name> <cmd_from_image>
 
 eg. docker run -it ubuntu bash (run the ubuntu image and launch the bash shell)
 
++ To exit a running container instance
+<CTL> + P + Q (Windows)
+
++ To restore a previously detached container instance
+docker attach <container_name> | <container_id>
+
 + Customise an image by defining a Dockerfile (Windows) or .dockerfile (Linux/Mac)
 Syntax:
 FROM <image>
