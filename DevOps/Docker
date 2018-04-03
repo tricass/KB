@@ -1,0 +1,33 @@
++ List running containers
+docker ps
+
++ List all images
+docker images
+
++ Pull down an image
+docker pull <image_name>
+
++ Run a container instance
+docker run -it <image_name> <cmd_from_image>
+
+eg. docker run -it ubuntu bash (run the ubuntu image and launch the bash shell)
+
++ Customise an image by defining a Dockerfile (Windows) or .dockerfile (Linux/Mac)
+Syntax:
+FROM <image>
+RUN <cmd> [&& <cmd>]
+CMD <cmd>>
+
+eg.
+FROM ubuntu
+RUN apt-get update -yqq && apt-get install -yqq wget
+CMD bash
+
++ Build you customised image
+docker build -t <image_name> (from directory with Dockerfile)
+
++ Publish your own image
+docker tag <image_name> <hub_username/image_name>
+docker push <hub_username/image_name>
+
+run "docker login" as required
