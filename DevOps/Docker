@@ -48,8 +48,8 @@ Difference between VM and Containers
 |   Deps  |    |   Deps  |
 |    OS   |    |         |  <-- Key difference is no OS in a container.
 +++++++++++    +++++++++++      Docker users Linux cgroups, namespaces and chroots
-|    OS   |    |    OS   |      to interact with the base OS running on the server
-+++++++++++    +++++++++++
+|    OS   |    |    OS   |      to interact with the base OS running on the server.
++++++++++++    +++++++++++      No hypervisor needed.
 |  Server |    |  Server |
 +++++++++++    +++++++++++
 
