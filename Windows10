@@ -1,0 +1,4 @@
+Install the Windows Subsystem for Linux
+https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
++ Allows you to install and run linux based utilities from your Windows Powershell 
