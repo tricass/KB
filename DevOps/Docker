@@ -1,3 +1,6 @@
+Commands
+====================================================================================
+
 + List running containers
 docker ps
 
@@ -31,3 +34,19 @@ docker tag <image_name> <hub_username/image_name>
 docker push <hub_username/image_name>
 
 run "docker login" as required
+
+
+Difference between VM and Containers
+====================================================================================
+
++++++++++++    +++++++++++
+|   App   |    |   App   |
+|   Deps  |    |   Deps  |
+|    OS   |    |         |  <-- Key difference is no OS in a container.
++++++++++++    +++++++++++      Docker users Linux cgroups, namespaces and chroots
+|    OS   |    |    OS   |      to interact with the base OS running on the server
++++++++++++    +++++++++++
+|  Server |    |  Server |
++++++++++++    +++++++++++
+
+
