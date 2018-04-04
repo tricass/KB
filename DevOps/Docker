@@ -48,7 +48,7 @@ run "docker login" as required
 
 + Use docker networks to allow different containers to connect to each other
 docker network ls (to list them)
-docker rm <network_name> (to remove a network)
+docker network rm <network_name> (to remove a network)
 docker network create <network_name> (to creata a network)
 
 
