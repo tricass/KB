@@ -17,6 +17,7 @@ docker run -it <image_name> <cmd_from_image>
   ++ To share a directory or volume with the container use: "-v "<host_filesystem_directory>:<maps_to_container_filesystem_diferectory>""
      eg. -v "${PWD}:/app" (Windows)
      eg. -v "$PWD:/app" (Linux/Mac)
+  ++ To map an external port to an internal container port use: "-p <external_port>:<container_port>"
 
 eg. docker run -it ubuntu bash (run the ubuntu image and launch the bash shell)
 
