@@ -18,6 +18,7 @@ docker run -it <image_name> <cmd_from_image>
      eg. -v "${PWD}:/app" (Windows)
      eg. -v "$PWD:/app" (Linux/Mac)
   ++ To map an external port to an internal container port use: "-p <external_port>:<container_port>"
+  ++ To map a local directory to a directory mount within the container use: "-v <local_directory_fullpath>:<container_directory>"
 
 eg. docker run -it ubuntu bash (run the ubuntu image and launch the bash shell)
 
